@@ -68,6 +68,8 @@ export class ContextMenu {
       .attr('height', height);
     contextItems.append("text")
       .text(function (d, ) {
+        console.log(d);
+        console.log(typeof d.label);
         try {
           return d.label();
         } catch (e) {
